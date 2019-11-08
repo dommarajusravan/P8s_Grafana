@@ -1,0 +1,7 @@
+kubectl delete namespace monitoring-sravan
+
+./prometheus/uninstaller
+
+./grafana/uninstaller
+
+pkill -9 kubectl

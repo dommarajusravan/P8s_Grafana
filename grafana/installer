@@ -1,0 +1,10 @@
+#! /bin/bash
+
+
+# Grafanna install
+#oc project monitoring-sravan
+helm install ./chart/ \
+    -f ./values-custom.yml \
+    --namespace monitoring-sravan \
+    --name grafana-sravan --wait 
+
